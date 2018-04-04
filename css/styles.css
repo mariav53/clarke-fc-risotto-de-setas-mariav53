@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2{
+  font-family: 'Roboto Slab', serif;
+}
+
+.main_container{
+  background-color: red;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.main_header{
+  padding: 30px 30px;
+  margin: 0 auto;
+}
+.main_selection{
+  display: flex;
+  padding: 10px 30px;
+  border-bottom: 1px solid black;
+}
+.main_selection p{
+padding-right: 10px;
+}
+
+.ingredients_list{
+  list-style-type: none;
+  position: relative;
+}
+
+.ingredient_item{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin: 20px 0;
+}
+input[type="text"] {
+    width: 41px;
+    height: 41px;
+    margin-right:15px;
+    border-style: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+input[type="checkbox"] {
+    margin-right: 7px;
+    height: 17px;
+    width: 17px;
+}
+h2.ingredient_name {
+    font-size: 1em;
+}
+p.ingredient_brand {
+    font-size: 0.8em;
+}
+p.ingredient_price {
+    font-size: 0.8em;
+}
+p.ingredient_price_final {
+    position: absolute;
+    right: 8%;
+}
+
+
+.main_bottom{
+  padding: 30px;
+  position: relative;
+}
+.items_count{
+  margin-bottom: 20px;
+}
+.subtotal_container, .shipping_container, .total_container{
+  display: flex;
+    margin-bottom: 20px;
+}
+.items_subtotal, .shipping_cost, .total_cost{
+  position: absolute;
+  right: 8%;
+}
+.buy_container{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.buyBtn{
+width: 80%;
+padding: 10px 30px;
+border-style: none;
+border-radius: 3px;
+background: #4d8f00;
+color: #fff;
+
+}
