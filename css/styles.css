@@ -9,10 +9,11 @@ h1, h2{
 }
 
 .main_container{
-  background-color: red;
+  /* background-color: red; */
   width: 40%;
   margin: 0 auto;
   margin-top: 5%;
+  border: 1px solid grey;
 }
 
 .main_header{
@@ -24,8 +25,11 @@ h1, h2{
   padding: 10px 30px;
   border-bottom: 1px solid black;
 }
-.main_selection p{
-padding-right: 10px;
+.main_selection a{
+  padding-right: 10px;
+  text-decoration: none;
+  color:#000;
+  cursor: pointer;
 }
 
 .ingredients_list{
@@ -39,33 +43,34 @@ padding-right: 10px;
   padding-left: 30px;
   margin: 20px 0;
 }
-input[type="text"] {
-    width: 41px;
-    height: 41px;
-    margin-right:15px;
-    border-style: none;
-    border: 1px solid grey;
-    border-radius: 3px;
+input.ingredient_quantity {
+  width: 41px;
+  height: 41px;
+  margin-right:15px;
+  border-style: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 1.3em;
+  text-align: center;
 }
 input[type="checkbox"] {
-    margin-right: 7px;
-    height: 17px;
-    width: 17px;
+  margin-right: 7px;
+  height: 17px;
+  width: 17px;
 }
 h2.ingredient_name {
-    font-size: 1em;
+  font-size: 1em;
 }
 p.ingredient_brand {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 p.ingredient_price {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 p.ingredient_price_final {
-    position: absolute;
-    right: 8%;
+  position: absolute;
+  right: 8%;
 }
-
 
 .main_bottom{
   padding: 30px;
@@ -76,7 +81,7 @@ p.ingredient_price_final {
 }
 .subtotal_container, .shipping_container, .total_container{
   display: flex;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .items_subtotal, .shipping_cost, .total_cost{
   position: absolute;
@@ -86,15 +91,12 @@ p.ingredient_price_final {
   width: 100%;
   text-align: center;
   margin-top: 40px;
-
 }
-
 .buyBtn{
-width: 80%;
-padding: 10px 30px;
-border-style: none;
-border-radius: 3px;
-background: #4d8f00;
-color: #fff;
-
+  width: 80%;
+  padding: 10px 30px;
+  border-style: none;
+  border-radius: 3px;
+  background: #4d8f00;
+  color: #fff;
 }
