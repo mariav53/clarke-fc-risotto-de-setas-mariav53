@@ -6,13 +6,14 @@
 
 h1, h2{
   font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .main_container{
   /* background-color: red; */
   width: 40%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2%;
   border: 1px solid grey;
 }
 
@@ -23,12 +24,12 @@ h1, h2{
 .main_selection{
   display: flex;
   padding: 10px 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #418de5;
 }
 .main_selection a{
   padding-right: 10px;
   text-decoration: none;
-  color:#000;
+  color:#418de5;
   cursor: pointer;
 }
 
@@ -41,7 +42,11 @@ h1, h2{
   display: flex;
   align-items: center;
   padding-left: 30px;
-  margin: 20px 0;
+  padding: 15px;
+}
+
+.ingredient_item:nth-child(even) {
+  background: #eeeeee;
 }
 input.ingredient_quantity {
   width: 41px;
@@ -52,17 +57,27 @@ input.ingredient_quantity {
   border-radius: 3px;
   font-size: 1.3em;
   text-align: center;
+  color: #418de5;
 }
 input[type="checkbox"] {
   margin-right: 7px;
   height: 17px;
   width: 17px;
+  background-color: #418de5;
+  color: #418de5;
+}
+input[type="checkbox"]:checked {
+  background-color: #418de5;
+  color: #418de5;
+  border: 1px solid #418de5;
+
 }
 h2.ingredient_name {
   font-size: 1em;
 }
 p.ingredient_brand {
   font-size: 0.8em;
+  color:#a7a6a6;
 }
 p.ingredient_price {
   font-size: 0.8em;
@@ -70,6 +85,9 @@ p.ingredient_price {
 p.ingredient_price_final {
   position: absolute;
   right: 8%;
+  color: #47790d;
+  font-weight: bold;
+    font-size: 1em;
 }
 
 .main_bottom{
@@ -99,4 +117,5 @@ p.ingredient_price_final {
   border-radius: 3px;
   background: #4d8f00;
   color: #fff;
+  font-size: 1.5em;
 }

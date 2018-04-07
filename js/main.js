@@ -8,8 +8,6 @@ let ingredientFinalPrice;
 let subtotal = '';
 let sumaTotal;
 
-
-
 //función para obetener datos de la api
 function getData(){
   fetch('https://raw.githubusercontent.com/Adalab/recipes-data/master/rissoto-setas.json')
@@ -25,13 +23,13 @@ function getData(){
     listIngredients += `
       <li class="ingredient_item">
         <input type="checkbox" name="ingredient_checkbox"  class="ingredient_checkbox" value='' onclick="addCheckItem()" id="">
-        <input type="number" name="quantity" class="ingredient_quantity ingredient_quantity_${index}" onclick="addPriceIngredient(${index})" >
+        <input type="number" name="quantity" min="1" class="ingredient_quantity ingredient_quantity_${index}" onclick="addPriceIngredient(${index})" >
         <div class="ingredient_details">
           <h2 class="ingredient_name">${ingredient.product}</h2>
           <p class="ingredient_brand">${ingredient.brand ? ingredient.brand : 'N/A' }</p>
           <p class="ingredient_price ingredient_price_${index}">${ingredient.price}/kg</p>
         </div>
-        <p class="ingredient_price_final ingredient_price_final_${index}">${ingredient.price}</p>
+        <p class="ingredient_price_final ingredient_price_final_${index}">${ingredient.price}€</p>
       </li>
     `;
     currency = recipe.currency;
@@ -115,6 +113,7 @@ function uncheckAll(e){
 function addTotal(){
   //shippingPrice+subtotal
 }
+
 
 
 //EventListeners
